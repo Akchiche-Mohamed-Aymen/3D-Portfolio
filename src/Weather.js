@@ -18,7 +18,7 @@ export default function Weather() {
         if (city !== "") {
             setIsLoading(true)
             const url = "https://api.openweathermap.org/data/2.5/forecast?q=" + city +
-                "&units=imperial&APPID=23c45126cf0b9b8a63dc0e369561c53c";
+                "&units=imperial&appid=66f4afc899fe0ee3d2e2d847ee431037";
             axios.get(url)
                 .then((data) => {
                     setWeatherData(data.data.list[0])
@@ -26,6 +26,7 @@ export default function Weather() {
 
                 })
                 .catch(err => {
+                    console.log(err)
                     Swal.fire({
                         position: "center",
                         icon: "error",
@@ -67,6 +68,6 @@ export default function Weather() {
                 </div>
             </>
         )
-    else return <></>
+    else return null
 
 }

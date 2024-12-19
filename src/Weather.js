@@ -18,7 +18,7 @@ export default function Weather() {
         if (city !== "") {
             setIsLoading(true)
             const url = "https://api.openweathermap.org/data/2.5/forecast?q=" + city +
-                "&units=imperial&APPID=56866f8407bb1e2d63330f3c046f35af";
+                "&units=imperial&APPID=23c45126cf0b9b8a63dc0e369561c53c";
             axios.get(url)
                 .then((data) => {
                     setWeatherData(data.data.list[0])

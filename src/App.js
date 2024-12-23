@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className="flex items-center justify-around">
+      {/*<div className="flex items-center justify-around">
         <FormContact />
-      </div>
+      </div>*/}
     </div>
   );
 }

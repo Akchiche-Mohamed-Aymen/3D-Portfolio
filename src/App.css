@@ -1,6 +1,9 @@
+
 body{
-    @apply bg-violet-950;
+    background-image: url('./assets/herobg.png');
     width: 100vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 nav a:hover{
     @apply px-2 bg-violet-600 rounded

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-
+import logo from './assets/logo.jpg'
 export default function NavBar() {
   const[appear , setAppear] = useState(false)
   const[toggle , setToggle] = useState(false)
+  
   function handleSize() {
     let width = window.innerWidth
     if(width <= 650)
@@ -16,9 +17,9 @@ export default function NavBar() {
     }
   },[])
   return (
-    <nav className={`flex items-start justify-around py-3 bg-gray-900 ${toggle ? 'h-fit duration-1000': 'h-12'} mb-3`} >
-        <div>
-            <img src="" alt="" />
+    <nav className={`flex items-start justify-around py-3 bg-gray-950 ${toggle ? 'h-fit duration-1000': 'h-14'} mb-3`} >
+        <div className='flex items-center gap-2'>
+            <img src={logo} alt="" className='h-10 w-20 rounded' />
             <h1 className='text-white font-bold text-lg'>AYMEN | FRONTEND WEB DEVELOPER</h1>
         </div>
         <div className = 'flex flex-col md:flex-row gap-3 text-white'>

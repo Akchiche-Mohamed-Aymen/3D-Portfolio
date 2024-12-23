@@ -1,9 +1,7 @@
-import "./load.css"
-export default function Loader({ children }) {
 
+export default function Loader() {
+  
     return (
-        <div className="load">
-            <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
-        </div>
+        <span className="loader  mt-40"></span>
     )
 }

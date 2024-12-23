@@ -1,25 +1,16 @@
-
-import './App.css';
-import Button from './Button';
-
-import Countries from './Countries';
-import Weather from './Weather';
-import { useLanguage } from './context/LanguageProvider';
+import "./App.css";
+import FormContact from "./FormContact";
+import NavBar from "./NavBar";
 
 function App() {
-  const { language} = useLanguage()
-  
   return (
-        <div className="App">
-          <div className='container' style={{ direction: (language === "en") ? "ltr" : "rtl" }}>
-            <Countries />
-            <Weather />
-            <Button />
-          </div>
-        </div>
-    
+    <div className="App">
+      <NavBar />
+      <div className="flex items-center justify-around">
+        <FormContact />
+      </div>
+    </div>
   );
-
 }
 
 export default App;

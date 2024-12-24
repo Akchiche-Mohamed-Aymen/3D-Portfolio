@@ -22,7 +22,7 @@ export default function NavBar() {
             <img src={logo} alt="" className='h-10 w-20 rounded' />
             <h1 className='text-white font-bold text-lg'>AYMEN | FRONTEND WEB DEVELOPER</h1>
         </div>
-        <div className = 'flex flex-col md:flex-row gap-3 text-white'>
+        <div className = 'flex flex-col md:flex-row gap-3 text-white  pr-4'>
         {
               appear &&
               <>
